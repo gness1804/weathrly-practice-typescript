@@ -1,4 +1,5 @@
 import React from 'react';
+import { TempCalc } from './TempCalc';
 
 interface Props {
   cityText: string;
@@ -7,7 +8,7 @@ interface Props {
 export const Main = ({ cityText }: Props) => {
   return (
     <div>
-      <h3>{cityText}</h3>
+      <TempCalc cityText={cityText} />
     </div>
   );
 };
