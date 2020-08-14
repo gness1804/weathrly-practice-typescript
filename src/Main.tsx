@@ -1,9 +1,13 @@
-import React from "react";
+import React from 'react';
 
-export const Main = ({ cityText }) => {
-    return (
-        <div>
-
-        </div>
-    );
+interface Props {
+  cityText: string;
 }
+
+export const Main = ({ cityText }: Props) => {
+  return (
+    <div>
+      <h3>{cityText}</h3>
+    </div>
+  );
+};
